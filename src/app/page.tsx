@@ -61,19 +61,16 @@ const steps = [
 
 const stories = [
   {
-    name: "Jessica M.",
-    text: "CarePath Support has made such a difference in my life. They are kind, reliable and truly care.",
-    image: "/images/p1.png",
+    title: "Daily Living Support",
+    text: "The support has helped me feel more confident with my everyday routine and work towards greater independence.",
   },
   {
-    name: "Sarah T.",
-    text: "The team is amazing. They helped my daughter build confidence and become more independent.",
-    image: "/images/p2.png",
+    title: "Community Participation",
+    text: "Having support to get out into the community has helped me feel more connected and comfortable trying new activities.",
   },
   {
-    name: "Michael R.",
-    text: "I love going out and trying new things with my support worker. They make every day better.",
-    image: "/images/p3.png",
+    title: "Independent Living",
+    text: "With the right support around me, I can make more of my own choices and keep working towards my personal goals.",
   },
 ];
 
@@ -453,41 +450,47 @@ export default function Home() {
           <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#2f7d5c]">
-                Participant Stories
+                Example Participant Stories
               </p>
 
               <h2 className="mt-3 text-3xl font-semibold tracking-[-0.03em] text-[#0f172a] md:text-4xl">
-                Real Stories, Real Impact
+                Show the Impact of Your Support
               </h2>
+
+              <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-600">
+                This section can be customised with genuine participant or
+                family feedback when the website is prepared for your
+                organisation.
+              </p>
 
               <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 {stories.map((item) => (
                   <div
-                    key={item.name}
+                    key={item.title}
                     className="flex h-full flex-col justify-between rounded-2xl border border-[#e3f1ea] bg-white p-6 shadow-sm transition hover:shadow-md"
                   >
-                    <p className="text-sm leading-6 text-slate-600">
-                      “{item.text}”
-                    </p>
+                    <div>
+                      <span className="inline-flex rounded-full bg-[#eef7f1] px-2.5 py-1 text-[8px] font-semibold uppercase tracking-[0.14em] text-[#2f7d5c]">
+                        Sample Story
+                      </span>
+
+                      <p className="mt-5 text-sm leading-6 text-slate-600">
+                        “{item.text}”
+                      </p>
+                    </div>
 
                     <div className="mt-6 flex items-center gap-3">
-                      <div className="relative h-10 w-10 overflow-hidden rounded-full bg-[#eef7f1]">
-                        <Image
-                          src={item.image}
-                          alt={item.name}
-                          fill
-                          sizes="40px"
-                          className="object-cover"
-                        />
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#eef7f1] text-lg text-[#2f7d5c]">
+                        ♡
                       </div>
 
                       <div>
                         <p className="text-sm font-semibold text-[#0f172a]">
-                          {item.name}
+                          {item.title}
                         </p>
 
                         <p className="text-xs text-slate-500">
-                          Participant
+                          Example story
                         </p>
                       </div>
                     </div>
