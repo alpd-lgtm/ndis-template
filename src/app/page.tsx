@@ -27,11 +27,6 @@ const services = [
     "Transport Assistance",
     "Safe and reliable transport to appointments, activities and everyday events.",
   ],
-  [
-    "⌂",
-    "Household Support",
-    "Help around the home so you can enjoy a clean and comfortable space.",
-  ],
 ];
 
 const whyItems = [
@@ -84,9 +79,11 @@ export default function Home() {
       {/* =====================================================
           AXIS STUDIO DEMO NOTICE
       ====================================================== */}
+
       <div className="border-b border-[#dcebe3] bg-[#f4faf6]">
         <div className="mx-auto max-w-7xl px-4 py-2.5 sm:px-6">
           {/* MOBILE */}
+
           <div className="flex items-center justify-between gap-3 sm:hidden">
             <span className="shrink-0 rounded-full bg-[#0f172a] px-2.5 py-1 text-[7px] font-bold uppercase tracking-[0.14em] text-white">
               Axis Studio Demo
@@ -102,6 +99,7 @@ export default function Home() {
           </div>
 
           {/* TABLET / DESKTOP */}
+
           <div className="hidden items-center justify-between gap-5 sm:flex">
             <div className="flex min-w-0 items-center gap-3">
               <span className="shrink-0 rounded-full bg-[#0f172a] px-3 py-1 text-[9px] font-bold uppercase tracking-[0.14em] text-white">
@@ -128,19 +126,20 @@ export default function Home() {
         {/* =====================================================
             HERO
         ====================================================== */}
+
         <section className="relative overflow-hidden bg-gradient-to-b from-[#eef7f1] to-white">
-          <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 pb-10 pt-7 sm:gap-10 sm:px-6 sm:pb-12 sm:pt-8 lg:grid-cols-[1fr_1.05fr] lg:gap-14 lg:pb-16 lg:pt-10">
+          <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 pb-10 pt-7 sm:gap-10 sm:px-6 sm:pb-12 sm:pt-8 lg:grid-cols-[1fr_1.05fr] lg:gap-14 lg:pb-16 lg:pt-7">
             <div className="min-w-0">
               <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.14em] text-[#2f7d5c] sm:mb-4 sm:text-sm">
                 SUPPORT BUILT AROUND YOU
               </p>
 
-              <h1 className="max-w-xl break-words text-[32px] font-semibold leading-[1.04] tracking-[-0.045em] text-[#0f172a] min-[360px]:text-[34px] sm:text-5xl sm:leading-[1.08] lg:text-[52px]">
-                Compassionate NDIS Support{" "}
-                <span className="text-[#2f7d5c]/90">
-                  Every Step of the Way
-                </span>
-              </h1>
+<h1 className="max-w-xl break-words text-[32px] font-semibold leading-[1.04] tracking-[-0.045em] text-[#0f172a] min-[360px]:text-[34px] sm:text-5xl sm:leading-[1.08] lg:text-[52px]">
+  Compassionate Support{" "}
+  <span className="text-[#2f7d5c]/90">
+    Every Step of the Way
+  </span>
+</h1>
 
               <p className="mt-5 max-w-lg text-[15px] leading-7 text-slate-600 sm:mt-6 sm:text-base">
                 We provide personalised support that empowers you to live
@@ -154,7 +153,7 @@ export default function Home() {
                     href="#contact"
                     className="rounded-xl bg-[#2f7d5c] px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-[#256b4d] sm:px-6"
                   >
-                    Get Support →
+                    Get Support
                   </a>
 
                   <a
@@ -204,6 +203,7 @@ export default function Home() {
         {/* =====================================================
             TRUST STRIP
         ====================================================== */}
+
         <section className="border-y border-slate-100 bg-white px-4 py-9 sm:px-6">
           <div className="mx-auto max-w-7xl">
             <h2 className="text-center text-lg font-semibold text-[#0f172a] md:text-xl">
@@ -221,7 +221,7 @@ export default function Home() {
                 />
 
                 <p className="text-[10px] font-semibold uppercase leading-[1.15] tracking-wide text-slate-700 sm:text-xs">
-                  NDIS-Focused Support
+                  Person-Centred Support
                 </p>
               </div>
 
@@ -273,6 +273,7 @@ export default function Home() {
         {/* =====================================================
             SERVICES
         ====================================================== */}
+
         <section
           id="services"
           className="bg-[#f9fbfa] px-4 pb-8 pt-14 sm:px-6 lg:pb-8 lg:pt-16"
@@ -286,7 +287,7 @@ export default function Home() {
               Support That Suits Your Needs
             </h2>
 
-            <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-6 md:grid-cols-3 lg:grid-cols-5">
+            <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-6 md:grid-cols-2 lg:grid-cols-4">
               {services.map(([icon, title, desc]) => (
                 <div
                   key={title}
@@ -305,7 +306,7 @@ export default function Home() {
                   </p>
 
                   <p className="mt-4 text-xs font-semibold text-[#2f7d5c] transition group-hover:underline sm:mt-5 sm:text-sm">
-                    Learn more →
+                    Learn more
                   </p>
                 </div>
               ))}
@@ -325,6 +326,7 @@ export default function Home() {
         {/* =====================================================
             WHY + HOW
         ====================================================== */}
+
         <section className="bg-[#f9fbfa] px-4 pb-14 pt-4 sm:px-6">
           <div className="mx-auto grid max-w-7xl overflow-hidden rounded-[26px] border border-[#e3f1ea] bg-[#eef7f1] sm:rounded-[32px] lg:grid-cols-2">
             <div className="grid gap-8 p-5 sm:p-8 md:grid-cols-[220px_1fr] lg:p-10">
@@ -432,7 +434,7 @@ export default function Home() {
                     href="#contact"
                     className="mt-5 inline-flex rounded-xl bg-[#2f7d5c] px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-[#256b4d]"
                   >
-                    Get Started Today →
+                    Get Started Today
                   </a>
                 </div>
               </div>
@@ -443,6 +445,7 @@ export default function Home() {
         {/* =====================================================
             STORIES + CONTACT
         ====================================================== */}
+
         <section
           id="stories"
           className="bg-[#f9fbfa] px-4 pb-4 pt-8 sm:px-6 sm:pb-5"
@@ -502,6 +505,7 @@ export default function Home() {
             {/* =================================================
                 DEMO CONTACT FORM
             ================================================== */}
+
             <div
               id="contact"
               className="rounded-[28px] border border-[#e3f1ea] bg-white p-5 shadow-sm sm:p-6"
@@ -540,24 +544,24 @@ export default function Home() {
               <form className="mt-5 space-y-3">
                 <div className="grid gap-3 sm:grid-cols-2">
                   <input
-                    className="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none focus:border-[#2f7d5c]"
+                    className="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-[#0f172a] outline-none placeholder:text-slate-400 focus:border-[#2f7d5c]"
                     placeholder="Full Name"
                   />
 
                   <input
-                    className="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none focus:border-[#2f7d5c]"
+                    className="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-[#0f172a] outline-none placeholder:text-slate-400 focus:border-[#2f7d5c]"
                     placeholder="Phone Number"
                   />
                 </div>
 
                 <input
                   type="email"
-                  className="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none focus:border-[#2f7d5c]"
+                  className="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-[#0f172a] outline-none placeholder:text-slate-400 focus:border-[#2f7d5c]"
                   placeholder="Email Address"
                 />
 
                 <textarea
-                  className="h-28 w-full resize-none rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none focus:border-[#2f7d5c]"
+                  className="h-28 w-full resize-none rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-[#0f172a] outline-none placeholder:text-slate-400 focus:border-[#2f7d5c]"
                   placeholder="How can we help you?"
                 />
 
@@ -565,7 +569,7 @@ export default function Home() {
                   type="button"
                   className="w-full rounded-xl bg-[#2f7d5c] py-4 text-sm font-semibold text-white transition hover:bg-[#256b4d]"
                 >
-                  Send Enquiry →
+                  Send Enquiry
                 </button>
 
                 <p className="text-center text-[10px] leading-4 text-slate-400">
@@ -580,6 +584,7 @@ export default function Home() {
       {/* =====================================================
           AXIS STUDIO DEMO CTA
       ====================================================== */}
+
       <section
         id="axis-demo-cta"
         className="bg-[#f9fbfa] px-4 pb-9 pt-6 sm:px-6 sm:pb-11 sm:pt-8"
@@ -588,6 +593,7 @@ export default function Home() {
           <div className="overflow-hidden rounded-[24px] border border-slate-800 bg-[#0f172a] px-5 py-6 shadow-[0_14px_40px_rgba(15,23,42,0.10)] sm:rounded-[26px] sm:px-8 sm:py-7 lg:px-10">
             <div className="flex flex-col gap-7 lg:flex-row lg:items-center lg:justify-between">
               {/* LEFT */}
+
               <div className="max-w-2xl">
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="rounded-full bg-[#2f7d5c] px-3 py-1 text-[8px] font-bold uppercase tracking-[0.15em] text-white sm:text-[9px]">
@@ -595,7 +601,7 @@ export default function Home() {
                   </span>
 
                   <span className="text-[9px] font-medium text-slate-400 sm:text-[10px]">
-                    NDIS Care Services
+                    Care Services Website
                   </span>
                 </div>
 
@@ -610,6 +616,7 @@ export default function Home() {
               </div>
 
               {/* BUTTONS */}
+
               <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
                 <button
                   type="button"
@@ -636,6 +643,7 @@ export default function Home() {
       {/* =====================================================
           ONE ENQUIRY MODAL FOR BOTH CTA BUTTONS
       ====================================================== */}
+
       <TemplateEnquiryModal
         open={templateModalOpen}
         onClose={() => setTemplateModalOpen(false)}
