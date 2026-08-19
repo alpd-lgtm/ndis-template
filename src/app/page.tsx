@@ -76,51 +76,6 @@ export default function Home() {
     <>
       <Header />
 
-      {/* =====================================================
-          AXIS STUDIO DEMO NOTICE
-      ====================================================== */}
-
-      <div className="border-b border-[#dcebe3] bg-[#f4faf6]">
-        <div className="mx-auto max-w-7xl px-4 py-2.5 sm:px-6">
-          {/* MOBILE */}
-
-          <div className="flex items-center justify-between gap-3 sm:hidden">
-            <span className="shrink-0 rounded-full bg-[#0f172a] px-2.5 py-1 text-[7px] font-bold uppercase tracking-[0.14em] text-white">
-              Axis Studio Demo
-            </span>
-
-            <button
-              type="button"
-              onClick={() => setTemplateModalOpen(true)}
-              className="inline-flex min-h-8 items-center justify-center rounded-lg border border-[#2f7d5c]/20 bg-white px-3 text-[8px] font-bold text-[#2f7d5c] shadow-sm transition hover:bg-[#eef7f1]"
-            >
-              Start With This Design →
-            </button>
-          </div>
-
-          {/* TABLET / DESKTOP */}
-
-          <div className="hidden items-center justify-between gap-5 sm:flex">
-            <div className="flex min-w-0 items-center gap-3">
-              <span className="shrink-0 rounded-full bg-[#0f172a] px-3 py-1 text-[9px] font-bold uppercase tracking-[0.14em] text-white">
-                Axis Studio Demo
-              </span>
-
-              <p className="text-xs font-medium text-slate-500">
-                Sample website content for design preview only.
-              </p>
-            </div>
-
-            <button
-              type="button"
-              onClick={() => setTemplateModalOpen(true)}
-              className="shrink-0 rounded-lg border border-[#2f7d5c]/20 bg-white px-4 py-2 text-xs font-semibold text-[#2f7d5c] transition hover:bg-[#eef7f1]"
-            >
-              Start With This Design →
-            </button>
-          </div>
-        </div>
-      </div>
 
       <main className="bg-white">
         {/* =====================================================
